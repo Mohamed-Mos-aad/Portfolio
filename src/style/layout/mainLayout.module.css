@@ -1,0 +1,39 @@
+/* Start Variables */
+:root
+{
+    --main-color: #080928;
+    --second-color: #92f1fd;
+}
+/* End Variables */
+
+
+/* Start Main Layout */
+.mainlayout_container
+{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--main-color);
+    color: white;
+    position: relative;
+}
+.mainlayout_container::after
+{
+    content: '';
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../../assets/Ellipses.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mianlayout_content
+{
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+/* End Main Layout */

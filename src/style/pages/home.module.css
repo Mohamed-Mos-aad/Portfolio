@@ -1,0 +1,81 @@
+/* Start Variables */
+:root
+{
+    --main-color: #080928;
+    --words-color: #92f1fd;
+}
+/* End Variables */
+
+
+/* Start Home Page */
+.home_container
+{
+    height: 92vh;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+}
+.home_content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+.home_content h2
+{
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--words-color);
+}
+.home_content h1
+{
+    font-size: 61px;
+    font-weight: 600;
+}
+.home_content h1 span:first-of-type
+{
+    display: block;
+    font-size: 38px;
+    font-weight: 600;
+}
+.home_content h1 span:last-of-type
+{
+    display: block;
+    color: var(--words-color);
+}
+.personal_photo
+{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+.personal_photo img
+{
+    width: 65%;
+}
+.personal_photo::after
+{
+    width: 55%;
+    height: 65%;
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 22%;
+    z-index: -1;
+    border: solid 1px rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+}
+.personal_photo::before
+{
+    width: 55%;
+    height: 65%;
+    content: '';
+    position: absolute;
+    top: 27%;
+    left: 20%;
+    z-index: -1;
+    border: solid 1px rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+}
+/* End Home Page */

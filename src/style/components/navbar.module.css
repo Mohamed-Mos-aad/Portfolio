@@ -1,0 +1,35 @@
+/* Start Variables */
+:root
+{
+    --main-color: #080928;
+    --second-color: #92f1fd;
+}
+/* End Variables */
+
+
+/* Start Navbar Component */
+nav
+{
+    width: 100%;
+}
+nav ul
+{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    list-style-type: none;
+}
+nav ul li a
+{
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+:global(.active) {
+    color: var(--second-color);
+}
+/* End Navbar Component */
